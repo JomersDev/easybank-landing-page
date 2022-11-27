@@ -73,3 +73,52 @@ body {
     font-size: 0.9rem ;
     margin-bottom: 1.5em;
 }
+
+/****************************** Features Styling ***************************/
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2.5em;
+}
+
+.features-card {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.features-card h2 {
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: hsl(233, 26%, 24%);
+}
+
+.features-title {
+    text-align: center;
+    font-weight: 300;
+    color: hsl(233, 26%, 24%);
+    font-size: 2rem;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.features-para {
+    font-weight: 300;
+    text-align: center;
+    color: hsl(233, 8%, 62%);
+    font-size: 0.9rem ;
+    line-height: 1.5;
+}
+
+.features-title-para {
+    font-weight: 300;
+    text-align: center;
+    color: hsl(233, 8%, 62%);
+    font-size: 0.9rem ;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
