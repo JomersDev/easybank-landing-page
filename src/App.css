@@ -23,6 +23,11 @@ body {
     margin-bottom: 6em;
 }
 
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
 /****************************** Nav Styling ***************************/
 
 .nav-container {
@@ -122,3 +127,71 @@ body {
     line-height: 1.5;
     margin-bottom: 2em;
 }
+
+/****************************** Article Styling ***************************/
+
+.articles-container {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 1.75em;
+    padding-bottom: 7em;
+}
+
+.articles-item {
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 0.45em;
+    padding-bottom: 2.5em;
+}
+
+.articles-image {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 0.45em;
+}
+
+.articles-container h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: hsl(233, 26%, 24%);
+    margin-top: 2.75em;
+}
+
+.articles-author {
+    font-size: 0.7rem;
+    color: hsl(233, 8%, 62%);
+    font-weight: 300;
+    margin: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+}
+
+.articles-item h4 {
+    font-weight: 300;
+    font-size: 1.15rem;
+    color: hsl(233, 26%, 24%);
+    margin: 0;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.articles-para {
+    font-size: 0.8rem;
+    color: hsl(233, 8%, 62%);
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.5;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/****************************** Footer Styling ***************************/
