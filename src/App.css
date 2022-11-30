@@ -167,6 +167,7 @@ header .nav-btn {
 .features-card {
     text-align: center;
     margin-top: 1em;
+    max-width: 400px;
 }
 
 .features-card h2 {
@@ -223,6 +224,7 @@ header .nav-btn {
     margin-right: 1.5em;
     border-radius: 0.45em;
     padding-bottom: 2.5em;
+    max-width: 400px;
 }
 
 .articles-image {
@@ -270,6 +272,12 @@ header .nav-btn {
     padding-right: 2em;
 }
 
+.articles-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 /****************************** Footer Styling ***************************/
 
 .footer-container {
@@ -282,8 +290,16 @@ header .nav-btn {
     padding: 2.5em 0;
 }
 
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
 .footer-logo {
-    width: 35%;
+    width: 55%;
 }
 
 .footer-socials {
@@ -315,52 +331,88 @@ header .nav-btn {
     margin-bottom: 1.2em;
     font-size: 1rem;
     height: 48px;
-    width: 50%;
+    width: 75%;
 }
 
 /****************************** Media Queries ***************************/
 
-@media (min-width: 1024px) {
-
-    /****************************** Hero Media Query ***************************/
-    .hero-container {
-        flex-direction: row-reverse;
-        padding-bottom: 0;
-        height: 45vh;
+@media (min-width: 662px) {
+    .features-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
     }
-
-    .hero-image-bg {
-        background: url("../src/assets/bg-intro-desktop.svg");
-        background-size: cover;
-        background-position: -40px -60px; 
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        margin: 0;
+    .articles-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
     }
+}
 
-    .hero-text-container {
-        width: 60%;
-        margin-left: 5em;
-        margin-right: 8em;
+@media (min-width: 1200px) {
+    /****************************** Features Large Query ***************************/
+    .features-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2em;
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+    .features-container {
+            align-items: flex-start
+    }
+    .features-para {
+        text-align: left;
+    }
+    .features-title {
+        margin-left: 2em;
+    }
+    .features-title-para {
+        margin-left: 4.5em;
+        max-width: 540px;
+        text-align: left;
+    }
+    .features-card {
+        text-align: left;
+    }
+    /****************************** Articles Large Query ***************************/
+    .articles-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .articles-container h1 {
+        font-size: 2.25rem;
+        margin-left: 0.6em;
+    }
+    .articles-container {
         align-items: flex-start;
-        margin-bottom: 10em;
+        padding-left: 4em;
+        padding-right: 4em;
     }
-
-    .hero-image {
-        padding: 0;
-        height: 700px;
-        width: auto;
-        object-position: 90px -90px;
+    /****************************** Footer Large Query ***************************/
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-
-    .hero-text-container p {
-        text-align: left;
-        padding: 0;
+    .footer-socials {
         margin: 0;
-        margin-bottom: 2em;
     }
-    .hero-text-container h1 {
-        text-align: left;
+    .footer-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+    .footer-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 6em;
+    }
+    .footer-btn {
+        width: 50%;
     }
 }

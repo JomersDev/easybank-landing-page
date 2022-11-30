@@ -20,6 +20,7 @@ export default function Nav() {
                     <img src="../src/assets/icon-close.svg" />
                 </button>
             </nav>
+            <button>D</button>
             <button className="nav-btn" onClick={showNavBar}>
                 <img src="../src/assets/icon-hamburger.svg" />
             </button>
